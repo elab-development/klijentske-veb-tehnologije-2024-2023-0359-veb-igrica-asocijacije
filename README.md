@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# 🧩 Asocijacije
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Tehnologije
 
-Currently, two official plugins are available:
+- ⚡ **Vite + React + TypeScript** — za brzi razvoj i statičku tipizaciju
+- 🎨 **TailwindCSS** — za jednostavno i responzivno stilizovanje elemenata
+- 📊 **Recharts** — za prikaz statistike u vidu grafikona
+- 📦 **localStorage API** — za čuvanje rezultata svih odigranih partija
+- 🖼️ **Unsplash API** — za prikaz nasumičnih slika pobednika i gubitnika
+- 🧠 **Datamuse API** — za generisanje reči kod automatskog kreiranja asocijacija
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🕹️ Funkcionalnosti
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🎯 Dva načina igranja:
+  - _API mod_ — reči se preuzimaju sa spoljnog API-ja
+  - _Memory mod_ — koristi se niz unapred definisanih asocijacija
+- 🧩 Tabla sa 4 kolone (A, B, C, D) i konačnim rešenjem
+- 🔄 Naizmenično igranje — red i blue se smenjuju po pravilima
+- 🧮 Sistem bodovanja zasnovan na broju otkrivenih pojmova
+- 🧠 Čuvanje svih partija u localStorage radi kasnijeg pregleda
+- 📈 Stranica sa **statistikom** — prikazuje:
+  - broj pobeda svakog igrača
+  - ukupan broj osvojenih poena
+  - broj pogođenih kolona
+- 🏆 Stranica sa **rezultatima** — vizuelno prikazuje pobednika i pobeđenu stranu
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Pokretanje projekta
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```bash
+# Instalacija paketa
+npm install
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Pokretanje
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ✍️ Autori
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Seminarski rad
+Autori: **Aleksa Babić**  
+ **Nina Milanović**  
+Fakultet organizacionih nauka, Univerzitet u Beogradu  
+Predmet: **Klijentske web tehnologije i skriptni jezici**
